@@ -79,6 +79,7 @@ A geocoder component using Mapbox Geocoding API
     -   `options.collapsed` **[Boolean][62]** If true, the geocoder control will collapse until hovered or in focus. (optional, default `false`)
     -   `options.clearAndBlurOnEsc` **[Boolean][62]** If true, the geocoder control will clear it's contents and blur when user presses the escape key. (optional, default `false`)
     -   `options.clearOnBlur` **[Boolean][62]** If true, the geocoder control will clear its value when the input blurs. (optional, default `false`)
+    -   `options.collapseOnBlur` **[Boolean][62]** If true, the geocoder control will collapse the dropdown menu when the input blurs. (optional, default `true`)
     -   `options.bbox` **[Array][63]?** a bounding box argument: this is
         a bounding box given as an array in the format [minX, minY, maxX, maxY].
         Search results will be limited to the bounding box.
@@ -101,6 +102,7 @@ A geocoder component using Mapbox Geocoding API
     -   `options.getItemValue` **[Function][65]?** A function that specifies how the selected result should be rendered in the search bar. This function should accept a single [Carmen GeoJSON][66] object  as input and return a string. HTML tags in the output string will not be rendered.
     -   `options.mode` **[String][57]** A string specifying the geocoding [endpoint][67] to query. Options are `mapbox.places` and `mapbox.places-permanent`. The `mapbox.places-permanent` mode requires an enterprise license for permanent geocodes. (optional, default `'mapbox.places'`)
     -   `options.localGeocoderOnly` **[Boolean][62]?** If `true`, indicates that the localGeocoder results should be the only ones returned to the user. If `false`, indicates that the localGeocoder results should be combined with those from the Mapbox API.
+    -   `options.hideResultsOnBlur` **[Boolean][62]** If `true`, the geocoder will hide the results when focus is lost. If `false`, the results will remain visible if focus is lost (i.e. scrolling with the map). (optional, default `true`)
 
 ### Examples
 
